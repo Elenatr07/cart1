@@ -54,9 +54,13 @@ if (getItem.hasOwnProperty(key)) {
   });
   $(document).on('click', '.add_item', function() {
 
-    history.go(0);
+ // history.go(0);
  
-  alert("добавлено в корзину");
+ alert("добавлено в корзину");
+ function open() {
+  $.jqCart('openCart'); 
+ }
+ setTimeout(open, 500)
   
   })
 
