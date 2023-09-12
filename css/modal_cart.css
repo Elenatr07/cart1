@@ -1,3 +1,100 @@
+
+
+
 .modal-header {
     border-bottom: 0;
+}
+.jqcart-title {
+    background-image: url(../img/cart.svg);
+    background-size: 70px 70px;
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+.jqcart-total-cnt {
+    position: absolute;
+    top: 38px;
+    right: -10px;
+    width: 26px;
+height: 26px;
+flex-shrink: 0;
+background-image: url(../img/Ellipse.svg);
+background-size: 26px 26px;
+background-repeat: no-repeat;
+}
+
+
+.modal_img {
+    width: 636px;
+    height: 585px;
+}
+.modal_img img {
+    width: 636px;
+    height: 585px;
+}
+.sum {
+    display: flex;
+    height: 600px;
+}
+select {
+    width: 500px;
+    border: none;
+    border-bottom: 1px solid;
+}
+.modal-body {
+    padding: 10px 90px 10px 90px;
+}
+.modal-footer {
+   display: none;
+}
+.add_item {
+    margin-top: 65px;
+    border-radius: 30px;
+border: 2px solid #E25F6A;
+background: #E25F6A;
+width: 242px;
+height: 60px;
+flex-shrink: 0;
+}
+.modal-dialog-scrollable .modal-body {
+     overflow-y:hidden;
+}
+.form_cake {
+    margin-left: 85px;
+    margin-top: 80px;
+}
+.modal-header .close {
+    padding: 48px;
+    
+}
+.modal-dialog {
+    width: 100vw;
+    margin: 0;
+   height: 100vh;
+}
+
+.modal-backdrop.show {
+    opacity: 0;
+}
+
+.modal-content {
+    border: 0;
+}
+
+@media (max-width:1000px) {
+    .modal-dialog-scrollable .modal-body {
+        overflow-y:auto;
+   }
+   .sum {
+    flex-direction: column;
+}
+}
+@media (min-width: 576px) {
+   .modal-dialog {
+    max-width: 100vw;
+    
+} 
+
 }

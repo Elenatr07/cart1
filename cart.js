@@ -17,8 +17,8 @@ $('.sum').on("change", "select", function(event) {
         }
         result+=value*1;
     
-    });
-    $(event.target).closest(".sum").find('.itog').val(result);
+    }); 
+    $(event.target).closest(".sum").find('.itog').val('£' + result);
     $(event.target).closest(".sum").find('.add_item').attr("data-price",(result)); //setter
     
     
