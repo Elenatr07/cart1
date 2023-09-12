@@ -2,7 +2,7 @@
 
 $('.sum').on("change", "select", function(event) {
 
-  console.log('Hello')
+  //console.log('Hello')
   $(event.target).closest(".sum").find("select").change(sum);
   function sum(){
     let result=0;
@@ -26,9 +26,9 @@ $('.sum').on("change", "select", function(event) {
    /* var id = $(event.target).closest(".sum").find(".add_item").data("id");
     console.log(id)*/
     var idoption = $(event.target).closest(".sum").find(':selected').data('id');
-    console.log(idoption)
+    //console.log(idoption)
     var idtotal = `${result}` + `${idoption}`;
-    console.log(idtotal)
+    //console.log(idtotal)
     $(event.target).closest(".sum").find(".add_item").attr("data-id", (idtotal));
     var weight = $(event.target).closest(".sum").find(':selected').data('weight');
     var filling = $(event.target).find(':selected').data('filling');
@@ -57,10 +57,10 @@ if (getItem.hasOwnProperty(key)) {
  // history.go(0);
  
  alert("добавлено в корзину");
- function open() {
+ /*function open() {
   $.jqCart('openCart'); 
  }
- setTimeout(open, 500)
+ setTimeout(open, 500)*/
   
   })
 
@@ -74,7 +74,7 @@ if (getItem.hasOwnProperty(key)) {
 
 
 });
-//$('.sum').on("click")
+
 
 
 /*
@@ -90,7 +90,7 @@ for (let i = 0; i < localStorageSize; i++) {
 console.log(window.localStorage.key(0));
 */
 
-
+/*
 for (let i = 0, length = localStorage.length; i < length; i++) {
   // ключ
   const key = localStorage.key(i);
@@ -98,3 +98,4 @@ for (let i = 0, length = localStorage.length; i < length; i++) {
   const value = localStorage[key];
   console.log(`${key}: ${value}`);
 }
+*/
